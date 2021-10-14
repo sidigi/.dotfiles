@@ -1,0 +1,75 @@
+#laravel Aliases
+alias art="php artisan"
+alias tinker="php artisan tinker"
+alias mc="php artisan make:controller"
+alias mrc="php artisan make:controller --resource "
+alias mm="php artisan make:migration"
+alias mmm="php artisan make:migration -m "
+alias migrate="php artisan migrate"
+alias mfs="php artisan migrate:fresh --seed"
+alias key="php artisan key:generate"
+alias serve="php artisan serve"
+alias viewlog='tail -f -n 450 storage/logs/laravel*.log \
+                | grep -i -E \
+                    "^\[\d{4}\-\d{2}\-\d{2} \d{2}:\d{2}:\d{2}\]|Next [\w\W]+?\:" \
+                    --color'
+alias rmlogs="rm storage/logs/laravel-*.log"
+alias du="php artisan dusk"
+alias mt="php artisan make:test"
+alias mtu="php artisan make:test --unit "
+
+function docker-composer() {
+    ( docker run --rm -v $(pwd):/app composer $* )
+}
+
+#composer
+alias cdo="composer dump-autoload -o"
+alias ci="composer install"
+alias ci8="php80 /usr/bin/composer install"
+alias co="composer outdated"
+alias cu="composer update"
+alias cu8="php80 /usr/bin/composer update"
+
+#phpunit
+alias t="phpunit"
+alias pf="phpunit --filter "
+alias pg="phpunit --group "
+
+#git
+alias nah="git reset --hard && git clean -df"
+alias gst='git status' 
+alias ga='git add'
+alias gc='git commit -m'
+alias gp='git pull && git push'
+alias gull='git pull'
+alias gush='git push'
+alias gb='git branch'
+alias gco='git checkout'
+alias gd='git diff'
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias wip="git add . && git commit -m 'wip'"
+alias grb='git branch | egrep -v "master" | xargs git branch -d'
+alias grbf='git branch | egrep -v "master" | xargs git branch -D'
+alias grbm='git branch --merged | egrep -v "(^\*|master)" | xargs git branch -d'
+
+function gcom() {
+    ( git add . && git commit -m $* )
+}
+
+#ssh aliases
+alias bgsprod="ssh bitbucket@89.223.27.107"
+
+#docker
+alias dcr="docker-compose run --rm"
+alias dcu="docker-compose up --build"
+alias ds="docker stop $(docker ps -a -q)"
+alias d='docker'
+alias dc='docker-compose'
+
+#Other
+alias _='sudo'
+alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
+
+#PHP
+alias dxd="sudo mv /etc/php/conf.d/xdebug.ini /etc/php/conf.d/xdebug.ini.dis"
+alias exd="sudo mv /etc/php/conf.d/xdebug.ini.dis /etc/php/conf.d/xdebug.ini"
