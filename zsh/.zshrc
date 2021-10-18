@@ -112,7 +112,9 @@ export PATH=$PATH:/usr/bin/go
 
 source /home/sidigi/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/powerlevel9k/powerlevel9k.zsh-theme 
+source ~/powerlevel9k/powerlevel9k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+bindkey -s ^f "tmux-sessionizer\n"
