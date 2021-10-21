@@ -118,3 +118,8 @@ source ~/powerlevel9k/powerlevel9k.zsh-theme
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 bindkey -s ^f "tmux-sessionizer\n"
+bindkey -s ^q "tmux-cht.sh\n"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
