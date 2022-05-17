@@ -37,7 +37,7 @@ alias pg="phpunit --group "
 
 #git
 alias nah="git reset --hard && git clean -df"
-alias gst='git status' 
+alias gst='git status'
 alias ga='git add'
 alias gc='git commit -m'
 alias gp='git pull && git push'
@@ -57,7 +57,7 @@ function gcom() {
 }
 
 #ssh aliases
-alias bgsprod="ssh bitbucket@89.223.27.107"
+alias bgsprod="ssh bitbucket@212.193.52.128"
 
 #docker
 alias dcr="docker-compose run --rm"
@@ -73,3 +73,6 @@ alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
 #PHP
 alias dxd="sudo mv /etc/php/conf.d/xdebug.ini /etc/php/conf.d/xdebug.ini.dis"
 alias exd="sudo mv /etc/php/conf.d/xdebug.ini.dis /etc/php/conf.d/xdebug.ini"
+
+#Lando
+alias lart="lando artisan"

@@ -9,6 +9,12 @@
         "laravel/envoy": "^2.5",
         "laravel/installer": "^4.2",
         "tightenco/tlint": "^5.0",
-        "beyondcode/expose": "^2.0"
+        "beyondcode/expose": "^2.0",
+        "symfony/var-dumper": "^6.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/package-versions-deprecated": false
+        }
     }
 }
