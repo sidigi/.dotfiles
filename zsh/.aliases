@@ -17,6 +17,10 @@ alias rmlogs="rm storage/logs/laravel-*.log"
 alias du="php artisan dusk"
 alias mt="php artisan make:test"
 alias mtu="php artisan make:test --unit "
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
+alias sa='[ -f sail ] && sh sail || sh vendor/bin/sail artisan'
+alias sc='[ -f sail ] && sh sail || sh vendor/bin/sail composer'
+alias sail-clear='./vendor/bin/sail down --rmi all -v'
 
 function docker-composer() {
     ( docker run --rm -v $(pwd):/app composer $* )
