@@ -1,7 +1,7 @@
-background_opacity: 0.92
 font:
   size: 14
 window:
+  opacity: 0.85
   padding:
     x: 0
     y: 0
