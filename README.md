@@ -1,4 +1,4 @@
 cd ~/.dotfiles
 
 
-stow <dir-for-symlink> 
+stow dir-for-symlink 
