@@ -1,0 +1,43 @@
+{
+    "name": "tightenco/tlint",
+    "description": "Tighten linter for Laravel conventions",
+    "homepage": "https://github.com/tighten/tlint",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Logan Henson",
+            "email": "logan@loganhenson.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.3",
+        "illuminate/view": "*",
+        "nikic/php-parser": "^4.10.3",
+        "symfony/console": "^4.3 || ^5.0",
+        "symfony/process": "^4.3 || ^5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tighten\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "tests\\": "tests/"
+        }
+    },
+    "bin": [
+        "bin/tlint"
+    ],
+    "scripts": {
+        "buildTestEnvironments": "./scripts/buildTestEnvironments.sh",
+        "runTests": "./scripts/runTests.sh"
+    }
+}

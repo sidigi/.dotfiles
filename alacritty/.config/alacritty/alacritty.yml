@@ -1,5 +1,9 @@
 font:
   size: 14
+  normal:
+    family: 'Fira Mono for Powerline'
+    style: Regular
+    
 window:
   opacity: 0.85
   padding:
